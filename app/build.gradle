@@ -1,0 +1,42 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    signingConfigs {
+        release {
+            storeFile file('C:\\Users\\loopa\\work\\work\\VoI\\juicy-match\\app\\build\\jks\\adhelpertest.jks')
+            storePassword '111111'
+            keyAlias 'key0'
+            keyPassword '111111'
+        }
+    }
+    compileSdk 32
+
+    defaultConfig {
+        applicationId "com.nativegame.match3game"
+        minSdk 21
+        targetSdk 31
+        versionCode 1
+        versionName "1.0"
+        signingConfig signingConfigs.release
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation 'com.github.LDFCZ:AdHelperLib:v0.9-alpha-true'
+    implementation 'androidx.appcompat:appcompat:1.5.1'
+    implementation 'com.google.android.material:material:1.6.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+}

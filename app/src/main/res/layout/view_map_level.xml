@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    tools:ignore="ContentDescription">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="@dimen/dialog_map_width"
+        android:layout_height="0dp"
+        android:background="@drawable/dialog_map"
+        app:layout_constraintBottom_toBottomOf="@id/guideline2"
+        app:layout_constraintDimensionRatio="4:5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/guideline">
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/baloo"
+            android:gravity="center"
+            android:text="@string/txt_select_level"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_dialog_size"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/guideline_up"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.35" />
+
+        <TextView
+            android:id="@+id/btn_level1"
+            android:layout_width="@dimen/image_round_btn_width"
+            android:layout_height="@dimen/image_round_btn_width"
+            android:layout_marginStart="@dimen/margin_large"
+            android:background="@drawable/btn_level"
+            android:fontFamily="@font/baloo"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_level_size"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/btn_level5"
+            app:layout_constraintEnd_toStartOf="@id/btn_level2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/guideline_up"
+            app:layout_constraintVertical_bias="0.15" />
+
+        <ImageView
+            android:id="@+id/image_level1_star"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/star_set_background"
+            app:layout_constraintBottom_toTopOf="@id/btn_level1"
+            app:layout_constraintDimensionRatio="2:1"
+            app:layout_constraintEnd_toEndOf="@id/btn_level1"
+            app:layout_constraintStart_toStartOf="@id/btn_level1"
+            app:layout_constraintTop_toTopOf="@id/btn_level1" />
+
+        <TextView
+            android:id="@+id/btn_level2"
+            android:layout_width="@dimen/image_round_btn_width"
+            android:layout_height="@dimen/image_round_btn_width"
+            android:background="@drawable/btn_level"
+            android:fontFamily="@font/baloo"
+            android:gravity="center"
+            android:text="2"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_level_size"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/btn_level1"
+            app:layout_constraintEnd_toStartOf="@id/btn_level3"
+            app:layout_constraintStart_toEndOf="@id/btn_level1"
+            app:layout_constraintTop_toTopOf="@id/btn_level1" />
+
+        <ImageView
+            android:id="@+id/image_level2_star"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/star_set_background"
+            app:layout_constraintBottom_toTopOf="@id/btn_level2"
+            app:layout_constraintDimensionRatio="2:1"
+            app:layout_constraintEnd_toEndOf="@id/btn_level2"
+            app:layout_constraintStart_toStartOf="@id/btn_level2"
+            app:layout_constraintTop_toTopOf="@id/btn_level2" />
+
+        <TextView
+            android:id="@+id/btn_level3"
+            android:layout_width="@dimen/image_round_btn_width"
+            android:layout_height="@dimen/image_round_btn_width"
+            android:background="@drawable/btn_level"
+            android:fontFamily="@font/baloo"
+            android:gravity="center"
+            android:text="3"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_level_size"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/btn_level1"
+            app:layout_constraintEnd_toStartOf="@id/btn_level4"
+            app:layout_constraintStart_toEndOf="@id/btn_level2"
+            app:layout_constraintTop_toTopOf="@id/btn_level1" />
+
+        <ImageView
+            android:id="@+id/image_level3_star"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/star_set_background"
+            app:layout_constraintBottom_toTopOf="@id/btn_level3"
+            app:layout_constraintDimensionRatio="2:1"
+            app:layout_constraintEnd_toEndOf="@id/btn_level3"
+            app:layout_constraintStart_toStartOf="@id/btn_level3"
+            app:layout_constraintTop_toTopOf="@id/btn_level3" />
+
+        <TextView
+            android:id="@+id/btn_level4"
+            android:layout_width="@dimen/image_round_btn_width"
+            android:layout_height="@dimen/image_round_btn_width"
+            android:layout_marginEnd="@dimen/margin_large"
+            android:background="@drawable/btn_level"
+            android:fontFamily="@font/baloo"
+            android:gravity="center"
+            android:text="4"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_level_size"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/btn_level1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/btn_level3"
+            app:layout_constraintTop_toTopOf="@id/btn_level1" />
+
+        <ImageView
+            android:id="@+id/image_level4_star"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/star_set_background"
+            app:layout_constraintBottom_toTopOf="@id/btn_level4"
+            app:layout_constraintDimensionRatio="2:1"
+            app:layout_constraintEnd_toEndOf="@id/btn_level4"
+            app:layout_constraintStart_toStartOf="@id/btn_level4"
+            app:layout_constraintTop_toTopOf="@id/btn_level4" />
+
+        <TextView
+            android:id="@+id/btn_level5"
+            android:layout_width="@dimen/image_round_btn_width"
+            android:layout_height="@dimen/image_round_btn_width"
+            android:background="@drawable/btn_level_lock"
+            android:fontFamily="@font/baloo"
+            android:gravity="center"
+            android:text="5"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_level_size"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/btn_level9"
+            app:layout_constraintEnd_toEndOf="@id/btn_level1"
+            app:layout_constraintStart_toStartOf="@id/btn_level1"
+            app:layout_constraintTop_toBottomOf="@id/btn_level1" />
+
+        <TextView
+            android:id="@+id/btn_level6"
+            android:layout_width="@dimen/image_round_btn_width"
+            android:layout_height="@dimen/image_round_btn_width"
+            android:background="@drawable/btn_level_lock"
+            android:fontFamily="@font/baloo"
+            android:gravity="center"
+            android:text="6"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_level_size"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/btn_level5"
+            app:layout_constraintEnd_toEndOf="@id/btn_level2"
+            app:layout_constraintStart_toStartOf="@id/btn_level2"
+            app:layout_constraintTop_toTopOf="@id/btn_level5" />
+
+        <TextView
+            android:id="@+id/btn_level7"
+            android:layout_width="@dimen/image_round_btn_width"
+            android:layout_height="@dimen/image_round_btn_width"
+            android:background="@drawable/btn_level_lock"
+            android:fontFamily="@font/baloo"
+            android:gravity="center"
+            android:text="7"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_level_size"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/btn_level5"
+            app:layout_constraintEnd_toEndOf="@id/btn_level3"
+            app:layout_constraintStart_toStartOf="@id/btn_level3"
+            app:layout_constraintTop_toTopOf="@id/btn_level5" />
+
+        <TextView
+            android:id="@+id/btn_level8"
+            android:layout_width="@dimen/image_round_btn_width"
+            android:layout_height="@dimen/image_round_btn_width"
+            android:background="@drawable/btn_level_lock"
+            android:fontFamily="@font/baloo"
+            android:gravity="center"
+            android:text="8"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_level_size"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/btn_level5"
+            app:layout_constraintEnd_toEndOf="@id/btn_level4"
+            app:layout_constraintStart_toStartOf="@id/btn_level4"
+            app:layout_constraintTop_toTopOf="@id/btn_level5" />
+
+        <TextView
+            android:id="@+id/btn_level9"
+            android:layout_width="@dimen/image_round_btn_width"
+            android:layout_height="@dimen/image_round_btn_width"
+            android:background="@drawable/btn_level_lock"
+            android:fontFamily="@font/baloo"
+            android:gravity="center"
+            android:text="9"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_level_size"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/btn_level13"
+            app:layout_constraintEnd_toEndOf="@id/btn_level1"
+            app:layout_constraintStart_toStartOf="@id/btn_level1"
+            app:layout_constraintTop_toBottomOf="@id/btn_level5" />
+
+        <TextView
+            android:id="@+id/btn_level10"
+            android:layout_width="@dimen/image_round_btn_width"
+            android:layout_height="@dimen/image_round_btn_width"
+            android:background="@drawable/btn_level_lock"
+            android:fontFamily="@font/baloo"
+            android:gravity="center"
+            android:text="10"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_level_size"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/btn_level9"
+            app:layout_constraintEnd_toEndOf="@id/btn_level2"
+            app:layout_constraintStart_toStartOf="@id/btn_level2"
+            app:layout_constraintTop_toTopOf="@id/btn_level9" />
+
+        <TextView
+            android:id="@+id/btn_level11"
+            android:layout_width="@dimen/image_round_btn_width"
+            android:layout_height="@dimen/image_round_btn_width"
+            android:background="@drawable/btn_level_lock"
+            android:fontFamily="@font/baloo"
+            android:gravity="center"
+            android:text="11"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_level_size"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/btn_level9"
+            app:layout_constraintEnd_toEndOf="@id/btn_level3"
+            app:layout_constraintStart_toStartOf="@id/btn_level3"
+            app:layout_constraintTop_toTopOf="@id/btn_level9" />
+
+        <TextView
+            android:id="@+id/btn_level12"
+            android:layout_width="@dimen/image_round_btn_width"
+            android:layout_height="@dimen/image_round_btn_width"
+            android:background="@drawable/btn_level_lock"
+            android:fontFamily="@font/baloo"
+            android:gravity="center"
+            android:text="12"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_level_size"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/btn_level9"
+            app:layout_constraintEnd_toEndOf="@id/btn_level4"
+            app:layout_constraintStart_toStartOf="@id/btn_level4"
+            app:layout_constraintTop_toTopOf="@id/btn_level9" />
+
+        <TextView
+            android:id="@+id/btn_level13"
+            android:layout_width="@dimen/image_round_btn_width"
+            android:layout_height="@dimen/image_round_btn_width"
+            android:background="@drawable/btn_level_lock"
+            android:fontFamily="@font/baloo"
+            android:gravity="center"
+            android:text="13"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_level_size"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/btn_level17"
+            app:layout_constraintEnd_toEndOf="@id/btn_level1"
+            app:layout_constraintStart_toStartOf="@id/btn_level1"
+            app:layout_constraintTop_toBottomOf="@id/btn_level9" />
+
+        <TextView
+            android:id="@+id/btn_level14"
+            android:layout_width="@dimen/image_round_btn_width"
+            android:layout_height="@dimen/image_round_btn_width"
+            android:background="@drawable/btn_level_lock"
+            android:fontFamily="@font/baloo"
+            android:gravity="center"
+            android:text="14"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_level_size"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/btn_level13"
+            app:layout_constraintEnd_toEndOf="@id/btn_level2"
+            app:layout_constraintStart_toStartOf="@id/btn_level2"
+            app:layout_constraintTop_toTopOf="@id/btn_level13" />
+
+        <TextView
+            android:id="@+id/btn_level15"
+            android:layout_width="@dimen/image_round_btn_width"
+            android:layout_height="@dimen/image_round_btn_width"
+            android:background="@drawable/btn_level_lock"
+            android:fontFamily="@font/baloo"
+            android:gravity="center"
+            android:text="15"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_level_size"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/btn_level13"
+            app:layout_constraintEnd_toEndOf="@id/btn_level3"
+            app:layout_constraintStart_toStartOf="@id/btn_level3"
+            app:layout_constraintTop_toTopOf="@id/btn_level13" />
+
+        <TextView
+            android:id="@+id/btn_level16"
+            android:layout_width="@dimen/image_round_btn_width"
+            android:layout_height="@dimen/image_round_btn_width"
+            android:background="@drawable/btn_level_lock"
+            android:fontFamily="@font/baloo"
+            android:gravity="center"
+            android:text="16"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_level_size"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/btn_level13"
+            app:layout_constraintEnd_toEndOf="@id/btn_level4"
+            app:layout_constraintStart_toStartOf="@id/btn_level4"
+            app:layout_constraintTop_toTopOf="@id/btn_level13" />
+
+        <TextView
+            android:id="@+id/btn_level17"
+            android:layout_width="@dimen/image_round_btn_width"
+            android:layout_height="@dimen/image_round_btn_width"
+            android:background="@drawable/btn_level_lock"
+            android:fontFamily="@font/baloo"
+            android:gravity="center"
+            android:text="17"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_level_size"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/guideline_down"
+            app:layout_constraintEnd_toEndOf="@id/btn_level1"
+            app:layout_constraintStart_toStartOf="@id/btn_level1"
+            app:layout_constraintTop_toBottomOf="@id/btn_level13" />
+
+        <TextView
+            android:id="@+id/btn_level18"
+            android:layout_width="@dimen/image_round_btn_width"
+            android:layout_height="@dimen/image_round_btn_width"
+            android:background="@drawable/btn_level_lock"
+            android:fontFamily="@font/baloo"
+            android:gravity="center"
+            android:text="18"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_level_size"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/btn_level17"
+            app:layout_constraintEnd_toEndOf="@id/btn_level2"
+            app:layout_constraintStart_toStartOf="@id/btn_level2"
+            app:layout_constraintTop_toTopOf="@id/btn_level17" />
+
+        <TextView
+            android:id="@+id/btn_level19"
+            android:layout_width="@dimen/image_round_btn_width"
+            android:layout_height="@dimen/image_round_btn_width"
+            android:background="@drawable/btn_level_lock"
+            android:fontFamily="@font/baloo"
+            android:gravity="center"
+            android:text="19"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_level_size"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/btn_level17"
+            app:layout_constraintEnd_toEndOf="@id/btn_level3"
+            app:layout_constraintStart_toStartOf="@id/btn_level3"
+            app:layout_constraintTop_toTopOf="@id/btn_level17" />
+
+        <TextView
+            android:id="@+id/btn_level20"
+            android:layout_width="@dimen/image_round_btn_width"
+            android:layout_height="@dimen/image_round_btn_width"
+            android:background="@drawable/btn_level_lock"
+            android:fontFamily="@font/baloo"
+            android:gravity="center"
+            android:text="20"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_level_size"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/btn_level17"
+            app:layout_constraintEnd_toEndOf="@id/btn_level4"
+            app:layout_constraintStart_toStartOf="@id/btn_level4"
+            app:layout_constraintTop_toTopOf="@id/btn_level17" />
+
+        <ImageButton
+            android:id="@+id/btn_level_previous"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/image_btn_height"
+            android:background="@drawable/btn_level_next"
+            android:rotation="180"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toStartOf="@id/image_page"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/guideline_down" />
+
+        <ImageView
+            android:id="@+id/image_page"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/image_btn_height"
+            android:background="@drawable/board_page"
+            app:layout_constraintDimensionRatio="3:2"
+            app:layout_constraintEnd_toStartOf="@id/btn_level_next"
+            app:layout_constraintStart_toEndOf="@id/btn_level_previous"
+            app:layout_constraintTop_toTopOf="@id/guideline_down" />
+
+        <TextView
+            android:id="@+id/txt_page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/baloo"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_dialog_size"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/image_page"
+            app:layout_constraintEnd_toEndOf="@id/image_page"
+            app:layout_constraintStart_toStartOf="@id/image_page"
+            app:layout_constraintTop_toTopOf="@id/image_page" />
+
+        <ImageButton
+            android:id="@+id/btn_level_next"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/image_btn_height"
+            android:background="@drawable/btn_level_next"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/image_page"
+            app:layout_constraintTop_toTopOf="@id/guideline_down" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.23" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_down"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.87" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.85" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
